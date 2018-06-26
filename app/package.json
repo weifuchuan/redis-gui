@@ -1,0 +1,22 @@
+{
+  "name": "redis-gui",
+  "productName": "redis-gui",
+  "version": "0.0.1",
+  "description": "GUI App for Redis",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "weifuchuan",
+    "email": "fuchuan.wei@hotmail.com"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "npm run electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "hiredis": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/hiredis": "^0.5.1"
+  }
+}
